@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Fantasy_Cricket_Game</class>
+    <widget class="QMainWindow" name="Fantasy_Cricket_Game">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>700</width>
+                <height>604</height>
+            </rect>
+        </property>
+        <property name="minimumSize">
+            <size>
+                <width>700</width>
+                <height>604</height>
+            </size>
+        </property>
+        <property name="font">
+            <font>
+                <family>Segoe UI</family>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <italic>false</italic>
+                <bold>true</bold>
+                <underline>false</underline>
+                <strikeout>false</strikeout>
+                <kerning>true</kerning>
+            </font>
+        </property>
+        <property name="windowTitle">
+            <string>Fantasy Cricket Game</string>
+        </property>
+        <property name="windowIcon">
+            <iconset>
+                <normaloff>ball.png</normaloff>ball.png
+            </iconset>
+        </property>
+        <property name="autoFillBackground">
+            <bool>false</bool>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+                <item>
+                    <widget class="QGroupBox" name="selection_box">
+                        <property name="font">
+                            <font>
+                                <family>Segoe UI</family>
+                                <pointsize>10</pointsize>
+                                <weight>75</weight>
+                                <bold>true</bold>
+                            </font>
+                        </property>
+                        <property name="title">
+                            <string>Your Selections</string>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_5">
+                            <item>
+                                <layout class="QHBoxLayout" name="horizontalLayout">
+                                    <item>
+                                        <layout class="QVBoxLayout" name="verticalLayout_2">
+                                            <item>
+                                                <widget class="QLabel" name="label">
+                                                    <property name="font">
+                                                        <font>
+                                                            <family>Segoe UI</family>
+                                                            <pointsize>10</pointsize>
+                                                            <weight>75</weight>
+                                                            <bold>true</bold>
+                                                            <kerning>true</kerning>
+                                                        </font>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Batsmen (BAT)</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>Qt::AlignCenter</set>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QLabel" name="bat_num">
+                                                    <property name="font">
+                                                        <font>
+                                                            <family>Segoe UI</family>
+                                                            <pointsize>10</pointsize>
+                                                            <weight>75</weight>
+                                                            <bold>true</bold>
+                                                            <kerning>true</kerning>
+                                                        </font>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>0</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>Qt::AlignCenter</set>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                    <item>
+                                        <layout class="QVBoxLayout" name="verticalLayout_3">
+                                            <item>
+                                                <widget class="QLabel" name="label_3">
+                                                    <property name="font">
+                                                        <font>
+                                                            <family>Segoe UI</family>
+                                                            <pointsize>10</pointsize>
+                                                            <weight>75</weight>
+                                                            <bold>true</bold>
+                                                            <kerning>true</kerning>
+                                                        </font>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Bowlers (BWL)</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>Qt::AlignCenter</set>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QLabel" name="bwl_num">
+                                                    <property name="font">
+                                                        <font>
+                                                            <family>Segoe UI</family>
+                                                            <pointsize>10</pointsize>
+                                                            <weight>75</weight>
+                                                            <bold>true</bold>
+                                                            <kerning>true</kerning>
+                                                        </font>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>0</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>Qt::AlignCenter</set>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                    <item>
+                                        <layout class="QVBoxLayout" name="verticalLayout_4">
+                                            <item>
+                                                <widget class="QLabel" name="label_5">
+                                                    <property name="font">
+                                                        <font>
+                                                            <family>Segoe UI</family>
+                                                            <pointsize>10</pointsize>
+                                                            <weight>75</weight>
+                                                            <bold>true</bold>
+                                                            <kerning>true</kerning>
+                                                        </font>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Allrounders (AR)</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>Qt::AlignCenter</set>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QLabel" name="ar_num">
+                                                    <property name="font">
+                                                        <font>
+                                                            <family>Segoe UI</family>
+                                                            <pointsize>10</pointsize>
+                                                            <weight>75</weight>
+                                                            <bold>true</bold>
+                                                            <kerning>true</kerning>
+                                                        </font>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>0</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>Qt::AlignCenter</set>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                    <item>
+                                        <layout class="QVBoxLayout" name="verticalLayout_5">
+                                            <item>
+                                                <widget class="QLabel" name="label_7">
+                                                    <property name="font">
+                                                        <font>
+                                                            <family>Segoe UI</family>
+                                                            <pointsize>10</pointsize>
+                                                            <weight>75</weight>
+                                                            <bold>true</bold>
+                                                            <kerning>true</kerning>
+                                                        </font>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Wicket-Keeper (WK)</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>Qt::AlignCenter</set>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QLabel" name="wk_num">
+                                                    <property name="font">
+                                                        <font>
+                                                            <family>Segoe UI</family>
+                                                            <pointsize>10</pointsize>
+                                                            <weight>75</weight>
+                                                            <bold>true</bold>
+                                                            <kerning>true</kerning>
+                                                        </font>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>0</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>Qt::AlignCenter</set>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                </layout>
+                            </item>
+                        </layout>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QGroupBox" name="make_team_box">
+                        <property name="font">
+                            <font>
+                                <family>Segoe UI</family>
+                                <pointsize>10</pointsize>
+                                <weight>75</weight>
+                                <bold>true</bold>
+                            </font>
+                        </property>
+                        <property name="title">
+                            <string>Make Team</string>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,0,1">
+                            <item>
+                                <layout class="QVBoxLayout" name="verticalLayout_6">
+                                    <property name="sizeConstraint">
+                                        <enum>QLayout::SetMinimumSize</enum>
+                                    </property>
+                                    <item>
+                                        <layout class="QHBoxLayout" name="horizontalLayout_6">
+                                            <item>
+                                                <widget class="QLabel" name="label_11">
+                                                    <property name="font">
+                                                        <font>
+                                                            <family>Segoe UI</family>
+                                                            <pointsize>10</pointsize>
+                                                            <weight>75</weight>
+                                                            <bold>true</bold>
+                                                            <kerning>true</kerning>
+                                                        </font>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Points Available:</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QLabel" name="points_available_label">
+                                                    <property name="font">
+                                                        <font>
+                                                            <family>Segoe UI</family>
+                                                            <pointsize>10</pointsize>
+                                                            <weight>75</weight>
+                                                            <bold>true</bold>
+                                                            <kerning>true</kerning>
+                                                        </font>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>1000</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                    <item>
+                                        <layout class="QHBoxLayout" name="horizontalLayout_4">
+                                            <item>
+                                                <widget class="QRadioButton" name="radioButton_bat">
+                                                    <property name="font">
+                                                        <font>
+                                                            <family>Segoe UI</family>
+                                                            <pointsize>10</pointsize>
+                                                            <weight>75</weight>
+                                                            <bold>true</bold>
+                                                            <kerning>true</kerning>
+                                                        </font>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>BAT</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QRadioButton" name="radioButton_bwl">
+                                                    <property name="font">
+                                                        <font>
+                                                            <family>Segoe UI</family>
+                                                            <pointsize>10</pointsize>
+                                                            <weight>75</weight>
+                                                            <bold>true</bold>
+                                                            <kerning>true</kerning>
+                                                        </font>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>BWL</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QRadioButton" name="radioButton_ar">
+                                                    <property name="font">
+                                                        <font>
+                                                            <family>Segoe UI</family>
+                                                            <pointsize>10</pointsize>
+                                                            <weight>75</weight>
+                                                            <bold>true</bold>
+                                                            <kerning>true</kerning>
+                                                        </font>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>AR</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QRadioButton" name="radioButton_wk">
+                                                    <property name="minimumSize">
+                                                        <size>
+                                                            <width>0</width>
+                                                            <height>27</height>
+                                                        </size>
+                                                    </property>
+                                                    <property name="font">
+                                                        <font>
+                                                            <family>Segoe UI</family>
+                                                            <pointsize>10</pointsize>
+                                                            <weight>75</weight>
+                                                            <bold>true</bold>
+                                                            <kerning>true</kerning>
+                                                        </font>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>WK</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                    <item>
+                                        <widget class="QListWidget" name="list1">
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>260</width>
+                                                    <height>300</height>
+                                                </size>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </item>
+                            <item>
+                                <layout class="QVBoxLayout" name="verticalLayout_10">
+                                    <item>
+                                        <spacer name="horizontalSpacer">
+                                            <property name="orientation">
+                                                <enum>Qt::Horizontal</enum>
+                                            </property>
+                                            <property name="sizeHint" stdset="0">
+                                                <size>
+                                                    <width>40</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                    </item>
+                                    <item>
+                                        <widget class="QLabel" name="label_15">
+                                            <property name="font">
+                                                <font>
+                                                    <family>Segoe UI</family>
+                                                    <weight>75</weight>
+                                                    <bold>true</bold>
+                                                </font>
+                                            </property>
+                                            <property name="text">
+                                                <string>&gt;</string>
+                                            </property>
+                                            <property name="alignment">
+                                                <set>Qt::AlignCenter</set>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <spacer name="horizontalSpacer_2">
+                                            <property name="orientation">
+                                                <enum>Qt::Horizontal</enum>
+                                            </property>
+                                            <property name="sizeHint" stdset="0">
+                                                <size>
+                                                    <width>40</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                    </item>
+                                </layout>
+                            </item>
+                            <item>
+                                <layout class="QVBoxLayout" name="verticalLayout">
+                                    <property name="sizeConstraint">
+                                        <enum>QLayout::SetMinimumSize</enum>
+                                    </property>
+                                    <item>
+                                        <layout class="QHBoxLayout" name="horizontalLayout_7">
+                                            <item>
+                                                <widget class="QLabel" name="label_14">
+                                                    <property name="font">
+                                                        <font>
+                                                            <family>Segoe UI</family>
+                                                            <pointsize>10</pointsize>
+                                                            <weight>75</weight>
+                                                            <bold>true</bold>
+                                                            <kerning>true</kerning>
+                                                        </font>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Points Used:</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QLabel" name="points_used_label">
+                                                    <property name="font">
+                                                        <font>
+                                                            <family>Segoe UI</family>
+                                                            <pointsize>10</pointsize>
+                                                            <weight>75</weight>
+                                                            <bold>true</bold>
+                                                            <kerning>true</kerning>
+                                                        </font>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>0</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                    <item>
+                                        <layout class="QHBoxLayout" name="horizontalLayout_3">
+                                            <item>
+                                                <widget class="QLabel" name="label_9">
+                                                    <property name="minimumSize">
+                                                        <size>
+                                                            <width>0</width>
+                                                            <height>27</height>
+                                                        </size>
+                                                    </property>
+                                                    <property name="font">
+                                                        <font>
+                                                            <family>Segoe UI</family>
+                                                            <pointsize>10</pointsize>
+                                                            <weight>75</weight>
+                                                            <bold>true</bold>
+                                                            <kerning>true</kerning>
+                                                        </font>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Team Name:</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>Qt::AlignCenter</set>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QLabel" name="team_name_label">
+                                                    <property name="font">
+                                                        <font>
+                                                            <family>Segoe UI</family>
+                                                            <pointsize>10</pointsize>
+                                                            <weight>75</weight>
+                                                            <bold>true</bold>
+                                                            <kerning>true</kerning>
+                                                        </font>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Team</string>
+                                                    </property>
+                                                    <property name="alignment">
+                                                        <set>Qt::AlignCenter</set>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                    <item>
+                                        <widget class="QListWidget" name="list2">
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>260</width>
+                                                    <height>300</height>
+                                                </size>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </item>
+                        </layout>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+        <widget class="QMenuBar" name="menubar">
+            <property name="geometry">
+                <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>700</width>
+                    <height>29</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>10</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                </font>
+            </property>
+            <widget class="QMenu" name="menuManage_Teams">
+                <property name="font">
+                    <font>
+                        <pointsize>10</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                    </font>
+                </property>
+                <property name="title">
+                    <string>Manage Teams</string>
+                </property>
+                <addaction name="actionAdd_Team"/>
+                <addaction name="actionOpen_Team"/>
+                <addaction name="actionSave_Team"/>
+                <addaction name="actionEvaluate_Team"/>
+            </widget>
+            <addaction name="menuManage_Teams"/>
+        </widget>
+        <widget class="QStatusBar" name="statusbar"/>
+        <action name="actionAdd_Team">
+            <property name="text">
+                <string>New Team</string>
+            </property>
+            <property name="font">
+                <font>
+                    <family>Segoe UI</family>
+                    <pointsize>10</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                    <kerning>true</kerning>
+                </font>
+            </property>
+        </action>
+        <action name="actionOpen_Team">
+            <property name="text">
+                <string>Open Team</string>
+            </property>
+            <property name="font">
+                <font>
+                    <family>Segoe UI</family>
+                    <pointsize>10</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                </font>
+            </property>
+        </action>
+        <action name="actionSave_Team">
+            <property name="text">
+                <string>Save Team</string>
+            </property>
+            <property name="font">
+                <font>
+                    <family>Segoe UI</family>
+                    <pointsize>10</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                </font>
+            </property>
+        </action>
+        <action name="actionEvaluate_Team">
+            <property name="text">
+                <string>Evaluate Team</string>
+            </property>
+            <property name="font">
+                <font>
+                    <family>Segoe UI</family>
+                    <pointsize>10</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                </font>
+            </property>
+        </action>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>

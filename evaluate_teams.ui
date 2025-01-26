@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>evaluate_team_dialog</class>
+    <widget class="QDialog" name="evaluate_team_dialog">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>600</width>
+                <height>465</height>
+            </rect>
+        </property>
+        <property name="minimumSize">
+            <size>
+                <width>600</width>
+                <height>465</height>
+            </size>
+        </property>
+        <property name="windowTitle">
+            <string>Evaluate Teams</string>
+        </property>
+        <property name="windowIcon">
+            <iconset>
+                <normaloff>ball.png</normaloff>ball.png
+            </iconset>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+                <layout class="QVBoxLayout" name="verticalLayout_3">
+                    <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_2">
+                            <item>
+                                <spacer name="horizontalSpacer_5">
+                                    <property name="orientation">
+                                        <enum>Qt::Horizontal</enum>
+                                    </property>
+                                    <property name="sizeHint" stdset="0">
+                                        <size>
+                                            <width>40</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </item>
+                            <item>
+                                <widget class="QLabel" name="label">
+                                    <property name="font">
+                                        <font>
+                                            <pointsize>12</pointsize>
+                                        </font>
+                                    </property>
+                                    <property name="text">
+                                        <string>Evaluate the performance of your Fantasy Team</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>Qt::AlignCenter</set>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <spacer name="horizontalSpacer_6">
+                                    <property name="orientation">
+                                        <enum>Qt::Horizontal</enum>
+                                    </property>
+                                    <property name="sizeHint" stdset="0">
+                                        <size>
+                                            <width>40</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </item>
+                        </layout>
+                    </item>
+                    <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,4,2,4,1">
+                            <item>
+                                <spacer name="horizontalSpacer_3">
+                                    <property name="orientation">
+                                        <enum>Qt::Horizontal</enum>
+                                    </property>
+                                    <property name="sizeHint" stdset="0">
+                                        <size>
+                                            <width>40</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </item>
+                            <item>
+                                <widget class="QComboBox" name="team_select_dropdown">
+                                    <item>
+                                        <property name="text">
+                                            <string>Select Team</string>
+                                        </property>
+                                    </item>
+                                </widget>
+                            </item>
+                            <item>
+                                <spacer name="horizontalSpacer_2">
+                                    <property name="orientation">
+                                        <enum>Qt::Horizontal</enum>
+                                    </property>
+                                    <property name="sizeHint" stdset="0">
+                                        <size>
+                                            <width>40</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </item>
+                            <item>
+                                <widget class="QComboBox" name="match_select_dropdown">
+                                    <item>
+                                        <property name="text">
+                                            <string>Select Match</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>Match 1</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>Match 2</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>Match 3</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>Match 4</string>
+                                        </property>
+                                    </item>
+                                    <item>
+                                        <property name="text">
+                                            <string>Match 5</string>
+                                        </property>
+                                    </item>
+                                </widget>
+                            </item>
+                            <item>
+                                <spacer name="horizontalSpacer_4">
+                                    <property name="orientation">
+                                        <enum>Qt::Horizontal</enum>
+                                    </property>
+                                    <property name="sizeHint" stdset="0">
+                                        <size>
+                                            <width>40</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </item>
+                        </layout>
+                    </item>
+                    <item>
+                        <widget class="Line" name="line">
+                            <property name="orientation">
+                                <enum>Qt::Horizontal</enum>
+                            </property>
+                        </widget>
+                    </item>
+                    <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,0,1">
+                            <item>
+                                <layout class="QVBoxLayout" name="verticalLayout_2">
+                                    <item>
+                                        <widget class="QLabel" name="label_2">
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>0</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                            <property name="text">
+                                                <string>Players in your team:</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="QListWidget" name="player_list"/>
+                                    </item>
+                                </layout>
+                            </item>
+                            <item>
+                                <spacer name="horizontalSpacer">
+                                    <property name="orientation">
+                                        <enum>Qt::Horizontal</enum>
+                                    </property>
+                                    <property name="sizeHint" stdset="0">
+                                        <size>
+                                            <width>40</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </item>
+                            <item>
+                                <layout class="QVBoxLayout" name="verticalLayout">
+                                    <item>
+                                        <layout class="QHBoxLayout" name="horizontalLayout">
+                                            <item>
+                                                <widget class="QLabel" name="label_3">
+                                                    <property name="text">
+                                                        <string>Points:</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QLabel" name="total_points">
+                                                    <property name="text">
+                                                        <string>0</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <spacer name="horizontalSpacer_7">
+                                                    <property name="orientation">
+                                                        <enum>Qt::Horizontal</enum>
+                                                    </property>
+                                                    <property name="sizeHint" stdset="0">
+                                                        <size>
+                                                            <width>40</width>
+                                                            <height>20</height>
+                                                        </size>
+                                                    </property>
+                                                </spacer>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                    <item>
+                                        <widget class="QListWidget" name="point_list"/>
+                                    </item>
+                                </layout>
+                            </item>
+                        </layout>
+                    </item>
+                </layout>
+            </item>
+            <item>
+                <widget class="QPushButton" name="calc_score_button">
+                    <property name="text">
+                        <string>Calculate Score</string>
+                    </property>
+                </widget>
+            </item>
+        </layout>
+    </widget>
+    <resources/>
+    <connections>
+        <connection>
+            <sender>team_select_dropdown</sender>
+            <signal>activated(QString)</signal>
+            <receiver>player_list</receiver>
+            <slot>clear()</slot>
+            <hints>
+                <hint type="sourcelabel">
+                    <x>196</x>
+                    <y>51</y>
+                </hint>
+                <hint type="destinationlabel">
+                    <x>199</x>
+                    <y>130</y>
+                </hint>
+            </hints>
+        </connection>
+        <connection>
+            <sender>calc_score_button</sender>
+            <signal>clicked()</signal>
+            <receiver>point_list</receiver>
+            <slot>clear()</slot>
+            <hints>
+                <hint type="sourcelabel">
+                    <x>293</x>
+                    <y>439</y>
+                </hint>
+                <hint type="destinationlabel">
+                    <x>380</x>
+                    <y>344</y>
+                </hint>
+            </hints>
+        </connection>
+        <connection>
+            <sender>match_select_dropdown</sender>
+            <signal>activated(QString)</signal>
+            <receiver>point_list</receiver>
+            <slot>reset()</slot>
+            <hints>
+                <hint type="sourcelabel">
+                    <x>418</x>
+                    <y>55</y>
+                </hint>
+                <hint type="destinationlabel">
+                    <x>428</x>
+                    <y>185</y>
+                </hint>
+            </hints>
+        </connection>
+    </connections>
+</ui>
